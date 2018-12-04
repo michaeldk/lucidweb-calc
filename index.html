@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="description" content="Calculator"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Calculator</title>
+    <style type="text/css">
+    	label {
+			font-weight: bold;
+			display: block;
+		}
+    </style>
+</head>
+<body>
+	<main>
+		<label for="input">Input:</label>
+		<input id="input" value="[1, +, 4, -, 6, /, 2]">
+		<div>Press Enter to calculate</div>
+		<label for="">Details:</label>
+		<div id="details"></div>
+		<label for="">Answer:</label>
+		<div id="answer"></div>
+	</main>
+    <script type="text/javascript" src="js/operation.js"></script>
+    <script type="text/javascript" src="js/calculator.js"></script>
+    <script type="text/javascript">
+		// initialize calculator
+		let calculator = new Calculator('#input', '#answer', '#details');
+		calculator.calculate();
+    </script>
+</body>
+</html>
