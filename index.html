@@ -11,10 +11,19 @@
 			font-weight: bold;
 			display: block;
 		}
+
+		textarea {
+			width: 100%;
+		}
     </style>
 </head>
 <body>
 	<main>
+		<label for="input">Examples:</label>
+		<textarea rows="4">[1, +, 4, -, 6, /, 2]
+[12, '+', 8, '-', 20, '/', 4, '/', 2]
+[3, '*', 2, '+', 4, '-', 3, '*', 6, '/', 2]
+		</textarea>
 		<label for="input">Input:</label>
 		<input id="input" value="[1, +, 4, -, 6, /, 2]">
 		<div>Press Enter to calculate</div>
